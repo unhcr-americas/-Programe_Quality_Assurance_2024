@@ -45,7 +45,8 @@ To run the package you will need to set your activityinfo credentials as a token
 Once the package installed, Generate your report with 
 
 ```{r example, eval=FALSE, include=TRUE}
-rogQA::report_qa(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
+ProgQA::report_qa(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
+ProgQA::report_qa_light(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
 ```
 
  

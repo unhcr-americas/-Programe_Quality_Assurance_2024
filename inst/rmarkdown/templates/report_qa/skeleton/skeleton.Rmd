@@ -29,7 +29,7 @@ block_toc()
 
 Core indicator data must be quality assured by the Regional Bureau in relation to completeness, accuracy and consistency. In each section below you will see the criteria that should be used for this validation – defined by the Global Data Service.
 
-## Completeness: 
+## Completeness
 
  __Comp1.__ All mandatory core impact indicators and core outcome indicators from relevant outcome areas have been selected for all relevant population groups
 
@@ -39,7 +39,7 @@ Core indicator data must be quality assured by the Regional Bureau in relation t
 
  __Comp4.__ Data limitations have been recorded for each indicator, as applicable - when no data is provided, while that indicator was selected for that population group 
 
-## Accuracy:
+## Accuracy
 
  __Acc1.__ Percentage indicators are correctly calculated, when both numerator and baseline
 
@@ -55,7 +55,7 @@ Core indicator data must be quality assured by the Regional Bureau in relation t
 
  __Acc7.__ Possible erroneous values are identified based on the known situation in the country (e.g., the data entered seems plausible and outliers can be explained)
 
-## Consistency: 
+## Consistency
 
  __Cons1.__ The data and the narrative in the multi-year country strategy and/or the country annual results reports align, i.e., they tell the same story
 
@@ -833,6 +833,27 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 :::
 \newpage
 
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA15-15.3"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+
+
+[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=150)
+
+
+
+:::
+\newpage
+
 ##  Complementary Pathways
 
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
@@ -1230,6 +1251,44 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 ::: {custom-style="Quote"}
 
 [Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=139)
+
+
+
+:::
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA16-16.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=153)
+
+
+
+:::
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA16-16.2"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=156)
 
 
 
