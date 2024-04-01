@@ -1,0 +1,40 @@
+Package: ProgQA
+Title: ProgQA
+Version: 0.0.900
+Authors@R: 
+    person("Edouard", "Legoupil", , "legoupil@unhcr.org", role = c("aut", "cre"))
+Maintainer: Edouard Legoupil <legoupil@unhcr.org>
+Description: A report template for the Quality Assurence of Indicator
+    data.
+License: MIT + file LICENSE
+URL: https://github.com/unhcr-americas/ProgQA
+Imports: 
+    activityinfo,
+    countrycode,
+    dplyr,
+    flextable,
+    ggplot2,
+    ggtext,
+    glue,
+    here,
+    janitor,
+    jsonlite,
+    rmarkdown,
+    scales,
+    showtext,
+    stringr,
+    sysfonts,
+    systemfonts,
+    tidyr,
+    tidyverse,
+    unhcrdown,
+    unhcrthemes
+Suggests: 
+    knitr,
+    testthat
+VignetteBuilder: 
+    knitr
+Config/fusen/version: 0.5.2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
