@@ -148,6 +148,17 @@ prepare_qa_data <- function(activityInfoTable ){
                                                  baseline_2023_percent, 
                                                  baseline_2023_numerator) ) |>
     
+    ## Fix - issue in ActivityInfo that fills to 0% even if numerator is NA
+    dplyr::mutate( actual_2023 = dplyr::if_else( Show_As == "Percent" &
+                                                       is.na(actual_2023_numerator) ,
+                                                 NA, 
+                                                actual_2023),
+                   baseline_2023 = dplyr::if_else( Show_As == "Percent"  &
+                                                       is.na(baseline_2023_numerator) ,
+                                                 NA, 
+                                                 baseline_2023 ) ) |>
+    
+    
     
       # __Comp1.__ All mandatory core impact indicators and core outcome indicators from relevant outcome areas have been selected for all relevant population groups
       dplyr::mutate(Comp1_1 = dplyr::if_else( is.na(means_verification_population_type), "Missing Population Type", NA ) #,
@@ -283,7 +294,51 @@ prepare_qa_data <- function(activityInfoTable ){
                                ) ), 
                      na.rm = TRUE, 
                      sep = " - ",
-                     remove = FALSE) 
+                     remove = FALSE)  |>
+    dplyr::select(operation_mco, country, Indicator,  
+                  actual_2023, baseline_2023, target_2023,
+                  actual_2023_numerator,  actual_2023_percent, 
+                  baseline_2023_numerator, baseline_2023_percent,
+
+ x_id, x_last_edit_time, means_verification_id, means_verification_operation_country_id, 
+  means_verification_year, means_verification_results_level, 
+  means_verification_impact_area, means_verification_outcome_area, 
+  means_verification_indicator_code, means_verification_indicator, 
+  means_verification_population_type, means_verification_disaggregation, 
+  means_verification_data_source, means_verification_additional_data_sources, 
+  means_verification_data_source_comments, means_verification_mn_e_activity, 
+  means_verification_mn_e_activity_comments, means_verification_data_collection_frequency, 
+  means_verification_responsibility_internal, means_verification_responsibility_external, 
+  means_verification_target2023, means_verification_target2024, 
+  means_verification_target2025, means_verification_target2026, 
+  means_verification_actual_num_2022, means_verification_actual_den_2022, 
+  means_verification_actual_2022, means_verification_baseline_2023_rounded, 
+  disaggregation, data_collection_frequency, me_activity_comments, 
+  additional_data_sources, data_source_comments, same_source, 
+  data_source_revised, data_comments_revised, data_source_link, 
+   use_actuals, baseline_change_comm,  
+  baseline_2023_denominator,  baseline_2023_data_limitations, 
+   actual_2023_denominator,
+  actual_2023_data_limitations, please_check_value_over_100, 
+  please_check_value_not_between_1_3, the_actual_value_is_higher_than_the_baseline, 
+  the_actual_value_is_lower_than_the_baseline, the_actual_value_is_higher_than_the_target, 
+  the_actual_value_is_lower_than_the_target, last_edit_time, 
+  operation, indic_short, 
+  Indicator_lab2, 'Area of work', theme, subtheme, Results_Level, 
+  area_id, Area, Area_id, Ind_id, Ind_seq, Show_As, 
+  Reverse, threshold_red, threshold_orange, threshold_green, 
+  standard_direction, survey, RAS, STA, IDP, RET, OOC, 
+  all, DEN, max,  QA_logical, 
+  Comp1_1, Comp2_1, Comp2_2, Comp2_3, Comp3, Comp4, 
+  Acc1_1, Acc1_2, Acc1_3, Acc1_4, Acc1_5, Acc1_6, Acc2_1, 
+  Acc2_2, Acc3_1, Acc3_2, Acc5_1, Acc5_2, Acc5_3, Acc5_4, 
+  Cons1_1, Cons1_2)
+  
+  #df12 <- df1[, duplicated(colnames(df1))]
+  
+  # write.csv(df1, "dev/indic.csv",na = "")
+  # writexl::write_xlsx( df1, path = "dev/indic.xlsx")
+ #  openxlsx::write.xlsx(df1,   "dev/indic.xlsx",   firstActiveRow=2, withFilter = TRUE)
   
   return(df1)
     

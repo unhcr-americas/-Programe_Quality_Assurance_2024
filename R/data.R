@@ -3,6 +3,7 @@
 #' @format A data frame with 47 rows and 27 variables:
 #' \describe{
 #'   \item{\code{Indicator}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{indic_short}}{character COLUMN_DESCRIPTION}
 #'   \item{\code{Indicator_lab2}}{character COLUMN_DESCRIPTION}
 #'   \item{\code{Area of work}}{character COLUMN_DESCRIPTION}
 #'   \item{\code{theme}}{character COLUMN_DESCRIPTION}

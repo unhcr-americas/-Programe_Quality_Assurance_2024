@@ -108,6 +108,43 @@ incountry_gap(data, thisoperation_mco = "Brazil ABC" )
      
 
 
+
+# result_resource
+
+    
+
+  
+
+```{r example-result_resource, message = FALSE, warning = FALSE, fig.retina = 2, fig.width = 12, fig.asp = 0.618, fig.align = "center", out.width = "90%"}
+
+data <- prepare_qa_data(activityInfoTable= "cdn6y40lm87wi522")
+knitr::kable(data |>  
+               dplyr::filter(means_verification_results_level == "Outcome" ) |>
+               dplyr::arrange( means_verification_indicator_code) |>
+               dplyr::select(  means_verification_outcome_area, 
+                               means_verification_indicator) |>
+               dplyr::distinct())
+## budget data to be downloaded and save locally
+
+budget <- readxl::read_excel( system.file("4.6.1_Budget_Download.xlsx", package = "ProgQA"),  skip = 1)|>  
+#budget <- readxl::read_excel( here::here("data-raw", "4.6.1_Budget_Download.xlsx"),  skip = 1)|>
+  janitor::clean_names() 
+
+result_resource(data,
+                budget, 
+                thisind = "1.1 Proportion of refugees and asylum seekers registered on an individual basis.",
+                thisoutcome = "OA1: Access/Doc")
+
+result_resource(data, budget,
+                        poptype = "Refugees and Asylum-seekers",
+thisind = "13.3 Proportion of PoC (working age) who are unemployed.",  thisoutcome = "OA13: Livelihood")
+```
+
+  
+
+  
+
+
 # report_qa
 
     
@@ -122,6 +159,35 @@ incountry_gap(data, thisoperation_mco = "Brazil ABC" )
 
   
 
+
+# report_qa_light
+
+    
+
+  
+
+```{r example-report_qa_light}
+# ProgQA::report_qa_light(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
+```
+
+  
+
+  
+
+
+# report_result_resource
+
+    
+
+  
+
+```{r example-report_result_resource}
+# ProgQA::report_result_resource(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
+```
+
+  
+
+  
 
 <!--
  below is a default chunk to create and document your run_app function

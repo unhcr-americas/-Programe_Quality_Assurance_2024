@@ -36,4 +36,5 @@ Once the package installed, Generate your report with
 ``` r
 ProgQA::report_qa(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
 ProgQA::report_qa_light(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
+ProgQA::report_result_resource(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
 ```

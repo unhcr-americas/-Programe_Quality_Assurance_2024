@@ -216,9 +216,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-
-
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=19)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=19)
 
 
 
@@ -243,7 +241,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 ::: {custom-style="Quote"}
 
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=8)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=8)
 
 
 
@@ -266,7 +264,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=100)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=100)
 
 
 
@@ -290,7 +288,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=57)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=57)
 
 
 
@@ -310,7 +308,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=63)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=63)
 
 
 
@@ -333,7 +331,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=81)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=81)
 
 
 
@@ -355,7 +353,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=77)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=77)
 
 
 
@@ -377,7 +375,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=60)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=60)
 
 
 
@@ -397,7 +395,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=65)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=65)
 
 
 
@@ -421,7 +419,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=85)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=85)
 
 
 
@@ -440,7 +438,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=88)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=88)
 
 
 
@@ -459,7 +457,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=91)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=91)
 
 
 
@@ -480,7 +478,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=93)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=93)
 
 
 
@@ -498,7 +496,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=96)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=96)
 
 
 
@@ -516,7 +514,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=98)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=98)
 
 
 
@@ -536,7 +534,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=43)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=43)
 
 
 
@@ -554,7 +552,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=45)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=45)
 
 
 
@@ -572,7 +570,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=124)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=124)
 
 
 
@@ -590,7 +588,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=126)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=126)
 
 
 
@@ -610,7 +608,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=102)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=102)
 
 
 
@@ -628,7 +626,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=105)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=105)
 
 
 
@@ -646,7 +644,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=108)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=108)
 
 
 
@@ -666,7 +664,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=47)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=47)
 
 
 
@@ -690,7 +688,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=61)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=61)
 
 
 
@@ -710,7 +708,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=5)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=5)
 
 
 
@@ -730,7 +728,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 ::: {custom-style="Quote"}
  
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=71)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=71)
  
 
 :::
@@ -748,7 +746,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 ::: {custom-style="Quote"}
  
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=71)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=71)
  
 
 :::
@@ -766,7 +764,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 ::: {custom-style="Quote"}
  
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=74)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=74)
  
 
 :::
@@ -786,7 +784,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 ::: {custom-style="Quote"}
  
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=52)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=52)
  
 
 :::
@@ -806,7 +804,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 ::: {custom-style="Quote"}
  
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=145)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=145)
 
 
 
@@ -826,7 +824,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=147)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=147)
 
 
 
@@ -847,7 +845,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=150)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=150)
 
 
 
@@ -869,7 +867,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=54)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=54)
 
 
 
@@ -889,7 +887,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=150)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=150)
 
 
 
@@ -910,7 +908,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=49)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=49)
 
 
 
@@ -928,7 +926,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=141)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=141)
 
 
 
@@ -947,7 +945,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=143)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=143)
 
 
 
@@ -970,7 +968,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=111)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=111)
 
 
 
@@ -991,7 +989,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=26)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=26)
 
 
 
@@ -1011,7 +1009,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=120)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=120)
 
 
 
@@ -1030,7 +1028,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=122)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=122)
 
 
 
@@ -1051,7 +1049,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=24)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=24)
 
 
 
@@ -1071,7 +1069,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=115)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=115)
 
 
 
@@ -1090,7 +1088,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=153)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=153)
 
 
 
@@ -1111,7 +1109,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=128)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=128)
 
 
 
@@ -1131,7 +1129,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=131)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=131)
 
 
 
@@ -1152,7 +1150,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=118)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=118)
 
 
 
@@ -1174,7 +1172,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=21)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=21)
 
 
 
@@ -1194,7 +1192,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=28)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=28)
 
 
 
@@ -1213,7 +1211,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=134)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=134)
 
 
 
@@ -1231,7 +1229,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=136)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=136)
 
 
 
@@ -1250,7 +1248,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=139)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=139)
 
 
 
@@ -1269,7 +1267,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=153)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=153)
 
 
 
@@ -1288,7 +1286,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=156)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=156)
 
 
 
@@ -1309,7 +1307,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 ::: {custom-style="Quote"}
 
-[Link to indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=156)
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=156)
 
 
 

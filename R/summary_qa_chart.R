@@ -111,7 +111,7 @@ p <- summary1 |>
         title = stringr::str_wrap( paste0("RBM Systematic Quality Check: % of indicator with issues") , 60),
         subtitle = stringr::str_wrap( paste0("Regional Comparison Americas | 2023 Quality Assurance" ) ,
                                       80),
-        caption = "Source: UNHCR RBM / Compass ") 
+        caption = "Source: UNHCR RBM / Compass (provisional)") 
 
 return(p)
 

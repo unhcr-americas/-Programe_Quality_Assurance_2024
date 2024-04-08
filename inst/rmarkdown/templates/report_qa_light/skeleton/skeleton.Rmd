@@ -3,7 +3,7 @@ params:
   year: 2023
   activityInfoTable: "cdn6y40lm87wi522"
   region: "Americas"
-title: "Result Based Management - Indicator Quality Assurance"
+title: "Result Based Management - Indicator Review"
 subtitle: "Regional Bureau `r params$region` | `r params$year`"
 date: "`r format(Sys.Date(),  '%d %B %Y')`"
 output:

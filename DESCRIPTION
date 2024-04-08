@@ -14,6 +14,7 @@ Imports:
     dplyr,
     flextable,
     ggplot2,
+    ggrepel,
     ggtext,
     glue,
     here,
@@ -31,6 +32,7 @@ Imports:
     unhcrthemes
 Suggests: 
     knitr,
+    readxl,
     testthat
 VignetteBuilder: 
     knitr

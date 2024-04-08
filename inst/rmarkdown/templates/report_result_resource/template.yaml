@@ -1,0 +1,4 @@
+name: report_result_resource
+description: >
+   Report Resource & Results
+create_dir: TRUE

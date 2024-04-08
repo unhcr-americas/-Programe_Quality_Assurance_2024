@@ -1,4 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
+^docs$
 ^Programe_Quality_Assurance_2024\.Rproj$
