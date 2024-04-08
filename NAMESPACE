@@ -3,6 +3,7 @@
 export(incountry_gap)
 export(prepare_qa_data)
 export(rbm_bullet)
+export(report_country)
 export(report_qa)
 export(report_qa_light)
 export(report_result_resource)

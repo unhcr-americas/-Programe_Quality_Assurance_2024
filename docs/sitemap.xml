@@ -37,10 +37,19 @@
     <loc>/reference/rbm_bullet.html</loc>
   </url>
   <url>
+    <loc>/reference/report_country.html</loc>
+  </url>
+  <url>
     <loc>/reference/report_qa.html</loc>
   </url>
   <url>
     <loc>/reference/report_qa_light.html</loc>
+  </url>
+  <url>
+    <loc>/reference/report_result_resource.html</loc>
+  </url>
+  <url>
+    <loc>/reference/result_resource.html</loc>
   </url>
   <url>
     <loc>/reference/run_app.html</loc>

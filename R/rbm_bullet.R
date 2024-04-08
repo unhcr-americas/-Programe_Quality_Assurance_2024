@@ -53,7 +53,7 @@ rbm_bullet <- function(data, thisind){
              dplyr::mutate(means_verification_additional_data_sources = stringr::str_replace_all(means_verification_additional_data_sources,
                                                                              "https://", " " ) ) |>
             dplyr::rename(target = target_2023, 
-                          baseline = baseline_2023_percent, 
+                          baseline = baseline_2023, 
                           actual = actual_2023 ) |>  
             dplyr::mutate(means_verification_additional_data_sources = substr(means_verification_additional_data_sources, 0 , 50)) |>
             tidyr::unite(col =  "data_info", 
@@ -72,7 +72,7 @@ rbm_bullet <- function(data, thisind){
             dplyr::mutate( group = as.character(glue::glue("{country}/{means_verification_population_type}") ) ) |>
             dplyr::mutate( operation = as.character(
              # glue::glue("<b>{country}/{means_verification_population_type}</b><br> <i> {data_info}</i>") ) ) |>
-              glue::glue("<span style='font-size:10pt'><b>{country}/{means_verification_population_type}</b></span><span style='font-size:8pt'><br> <i> {data_info}</i></span>") ) ) |>
+              glue::glue("<span style='font-size:10pt'><b>{country}/{means_verification_population_type}</b></span><span style='font-size:6pt'><br> <i> {data_info}</i></span>") ) ) |>
             #dplyr::arrange(desc(actual))
             dplyr::group_by(country) |>
             dplyr::arrange(desc( actual), .by_group=TRUE ) |> 
@@ -90,7 +90,7 @@ rbm_bullet <- function(data, thisind){
               dplyr::pull()
     
     indname <- thisdata |>
-              dplyr::distinct(means_verification_indicator) |>
+              dplyr::distinct(Indicator) |>
               dplyr::pull()
     standard_direction <- thisdata |>
               dplyr::distinct(standard_direction) |>
@@ -130,30 +130,41 @@ if( nrow(thisdata) == 0) {
       maxorange <- max(thisdata$threshold_orange)
       maxred <- max(thisdata$threshold_red)
       yaxistext <- paste0("\n (as ", Show_As, ") Actual value = horizontal blue line. \n Baseline = black vertical line | Target = vertical grey line")
+      
       p <- p +
-        geom_col( aes(x = reorder(operation, actual) , y = threshold_green),
+          geom_col( aes(x = reorder(operation, actual) , 
+                        y = threshold_green),
                   fill = "#069C56", width = 0.6, alpha = 0.4  ) +
-        geom_col( aes(x = reorder(operation, actual), y = threshold_orange),
+        geom_col( aes(x = reorder(operation, actual), 
+                      y = threshold_orange),
                   fill = "#FF980E", width = 0.6,  alpha = 0.4 ) +
-        geom_col(  aes(x = reorder(operation, actual), y = threshold_red),
+        geom_col(  aes(x = reorder(operation, actual),
+                       y = threshold_red),
                    fill = "#D3212C", width = 0.6, alpha = 0.4 )
     }  else if ( standard_direction == "less_or_equal") { 
       
       maxgreen <- max(thisdata$threshold_green)
       maxorange <- max(thisdata$threshold_orange)
       maxred <- max(thisdata$threshold_red)
-      yaxistext <- paste0("\n (as ", Show_As, ") Actual value = horizontal blue line. \n Baseline = black vertical line | Target = vertical grey line")
+      yaxistext <- paste0("\n (as ", Show_As, ") Actual value = horizontal blue line. \n Baseline = black vertical line \n Target = grey vertical line")
+      
+      
       p <- p   +
-        geom_col(  aes(x = reorder(operation, actual), y = threshold_red),
+        geom_col(  aes(x = reorder(operation, actual), 
+                       y = threshold_red),
                    fill = "#D3212C", width = 0.6, alpha = 0.4 )+
-        geom_col( aes(x = reorder(operation, actual), y = threshold_orange),
+        geom_col( aes(x = reorder(operation, actual),
+                      y = threshold_orange),
                   fill = "#FF980E", width = 0.6,  alpha = 0.4 )+
-        geom_col( aes(x = reorder(operation, actual) , y = threshold_green),
+        geom_col( aes(x = reorder(operation, actual) ,
+                      y = threshold_green),
                   fill = "#069C56", width = 0.6, alpha = 0.4  )
     }
     
     p <- p  +
-      geom_errorbar(  aes(x = reorder(operation, actual), ymin = baseline, ymax = baseline),
+      ## add baseline...
+      geom_errorbar(  aes(x = reorder(operation, actual), 
+                          ymin = baseline, ymax = baseline),
                       color = "black",  width = 0.45,  size = 1) 
     
     ## Add the target and change the color based on the context
@@ -205,13 +216,13 @@ if( nrow(thisdata) == 0) {
     if( means_verification_results_level == "Outcome" & standard_direction != "No_standard") {
       yaxistext <- paste0("\n (as ",
                           Show_As,
-                          ") Actual value = horizontal blue line. \n Baseline = black vertical line | Target = vertical white line") 
+                          ") Actual value = horizontal blue line. \n Baseline = black vertical line \n Target = white vertical line") 
       
     } else if(means_verification_results_level == "Outcome" & standard_direction == "No_standard") {
       
       yaxistext <- paste0("\n (as ",
                           Show_As,
-                          ") Actual value = horizontal blue line. \n Baseline = black vertical line | Target = vertical grey line")
+                          ") Actual value = horizontal blue line. \n Baseline = black vertical line \n Target = grey vertical line")
       
     } else if (means_verification_results_level == "Impact" ) {
       

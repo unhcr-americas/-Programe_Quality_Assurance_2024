@@ -4,10 +4,12 @@
 \alias{incountry_gap}
 \title{Generate a bullet chart for in country indicator gap analysis}
 \usage{
-incountry_gap(data, thisoperation_mco)
+incountry_gap(data, budget, thisoperation_mco)
 }
 \arguments{
 \item{data}{RBM QA dataset - expect a few pre-defined variables to works well..}
+
+\item{budget}{table  from results.unhcr.org 4.6.1_Budget_Download.xlsx}
 
 \item{thisoperation_mco}{which operation plan to chart}
 }
@@ -20,5 +22,12 @@ This chart is designed to allow for quick gap analysis based on
 }
 \examples{
 data <- prepare_qa_data(activityInfoTable= "cdn6y40lm87wi522")
-incountry_gap(data, thisoperation_mco = "Brazil ABC" )
+budget <- readxl::read_excel( system.file("4.6.1_Budget_Download.xlsx", package = "ProgQA"),  skip = 1)|>  
+#budget <- readxl::read_excel( here::here("data-raw", "4.6.1_Budget_Download.xlsx"),  skip = 1)|>
+  janitor::clean_names() 
+incountry_gap(data,budget, thisoperation_mco = "Brazil ABC" )
+
+incountry_gap(data,budget, thisoperation_mco = "Colombia ABC" )
+
+incountry_gap(data,budget, thisoperation_mco = "Mexico ABC" )
 }

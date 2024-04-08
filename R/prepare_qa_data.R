@@ -140,6 +140,21 @@ prepare_qa_data <- function(activityInfoTable ){
     dplyr::left_join(country, by = c( "means_verification_operation_country_id" = "id" ) ) |>
     dplyr::left_join(ProgQA::mapping_indicator , by = c("means_verification_indicator_code" = "Indicator_Code") )  |>
     
+    # Clean the below
+#     > levels(as.factor(df1$means_verification_population_type))
+# [1] "IDPs"                                        
+# [2] "None"                                        
+# [3] "Others of Concern"                           
+# [4] "Others of Concern - Retornados/deportados"   
+# [5] "Others of Concern - Riesgo de desplazamiento"
+# [6] "Refugees and Asylum-seekers"                 
+# [7] "Returnees"                                   
+# [8] "Stateless Persons"  
+    dplyr::mutate(means_verification_population_type =  dplyr::recode(means_verification_population_type,
+                 "Others of Concern - Retornados/deportados" ="Others of Concern",
+                 "Others of Concern - Riesgo de desplazamiento"= "Others of Concern"  )) |>
+    
+    
     ## let's create the actual indicator value - independetly of wether is it's a percent or not..
     dplyr::mutate( actual_2023 = dplyr::if_else( Show_As == "Percent" ,
                                                  actual_2023_percent, 

@@ -1,0 +1,199 @@
+---
+params:
+  year: 2023
+  activityInfoTable: "cdn6y40lm87wi522"
+  region: "Americas"
+title: "Result Based Management - Resource Vs Results"
+subtitle: "Regional Evaluative Review - `r params$region` | `r params$year`"
+date: "`r format(Sys.Date(),  '%d %B %Y')`"
+output:
+  unhcrdown::docx_simple
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.cap = TRUE)
+library(officedown)
+library(unhcrthemes)
+library(ggplot2)
+library(rvg)
+library(tidyverse)
+library(scales)
+library(lubridate)
+library(fontawesome)
+library(readxl)
+library(FactoMineR) 
+library(factoextra) 
+library(directlabels)
+library(ggforce)
+library(ggtext)
+library(corrplot)
+library(ProgQA)
+
+options(scipen = 999) # turn-off scientific notation like 1e+48
+set.seed(1)
+extrafont::loadfonts(quiet=TRUE)
+# turn off the automatic use of showtext functionality, so that the dml function can works properly
+showtext::showtext_auto(FALSE) 
+# Loading data
+data <- ProgQA::prepare_qa_data(activityInfo = params$activityInfoTable)
+budget <- readxl::read_excel( here::here("data-raw", "4.6.1_Budget_Download.xlsx"),  skip = 1)|>
+  janitor::clean_names()
+
+
+```
+
+--- 
+
+
+```{r arg, ph=officer::ph_location_fullsize()}
+
+#  ProgQA::incountry_gap(data,budget, thisoperation_mco = "Argentina MCO ABC" )-> mygg
+# 
+# showtext::showtext_auto(FALSE)
+# dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r bra, ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =  "Brazil ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r can, ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =   "Canada ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco = "Colombia ABC"  ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =    "Costa Rica ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r cri, ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =  "Ecuador ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r slv, ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =   "El Salvador ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =     "Guatemala ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =   "Honduras ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =   "Mexico ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r ph=officer::ph_location_fullsize()}
+
+# incountry_gap(data,budget, thisoperation_mco =  "Panama MCO ABC" ) -> mygg 
+# 
+# showtext::showtext_auto(FALSE) 
+# dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =   "Peru ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r ph=officer::ph_location_fullsize()}
+
+# incountry_gap(data,budget, thisoperation_mco =   "United States MCO ABC" ) -> mygg 
+# 
+# showtext::showtext_auto(FALSE) 
+# dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+
+--- 
+
+```{r ph=officer::ph_location_fullsize()}
+
+incountry_gap(data,budget, thisoperation_mco =    "Venezuela ABC" ) -> mygg 
+
+showtext::showtext_auto(FALSE) 
+dml(ggobj = mygg, fonts = list(serif = 'Lato'))
+```
+
+

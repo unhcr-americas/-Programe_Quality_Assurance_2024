@@ -34,30 +34,12 @@ data <- ProgQA::prepare_qa_data(activityInfo = params$activityInfoTable)
 
 ## A visual Tool for Regional Review
 
-In order to facilitate a quick regional review, the review includes,  for each indicator, a summary chart together with a table outlining:  
+The charts are called __"bullet graph"__; they are a variation of a regular bar graph inspired by the traditional "thermometer charts" (_are we good?_) and progress bars (_are we progressing?_). 
 
- * Actual value with generated logical validation warning and feedback when required (concatenating: __Comp1, Comp2, Comp3, Acc1, Acc2, Acc3, Acc5__)  
- * Existing Data Limitation ( __Acc4, Cons5__)
- 
- * Missing data ( __Comp4__) for indicator that were selected and not data limitation was provided.
- 
-The table only includes indicators that have been included in the Monitoring  & Evaluation Plan. 
+This type of visualization allows to represent as multiple nested bars the different values of the indicators (baseline and actual) for all the different countries and population groups to be compared. 
 
-The charts are called "__bullet graph__"; they are a variation of a regular bar graph inspired by the traditional "thermometer charts" (_are we good?_) and progress bars (_are we progressing?_). This type of visualization allows to represent as multiple nested bars the different values of the indicators (baseline 2022 and current 2022) for all the different countries and population group to be compared. The dark center line represents the actual value, the dark vertical line represents the baseline value an the the colored bands represent standard ranges extracted from the [indicator metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf), i.e. acceptable /green, unacceptable/ orange & critical/red. The labels for the countries includes, for outcome what percentage of the total budget for the operation was spent on the outcome and some background in relation with the data source. 
+The blue bar represents the actual value. The dark vertical line represents the baseline value. The white or grey vertical line represents the target (for outcome indicators; as impact indicators do not have targets). The colored bands represent standard ranges (i.e. high is green; medium is yellow;low is red), where possible, aligned with the [metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/prog-hub/program-cycle/indictors/core/Core%20indicator%20guidance.pdf). The labels include the country, population group, and main data source.
 
-Indicators are grouped together in relation with technical area of expertise within the bureau: 
-
- * Protection / Legal ( Access to Territory, Non-refoulement; Complementary Pathways; Freedom of Movement; Statelessness; Law & Policy)
- 
- * Protection  / thematic ( Gender-Based Violence; Child Protection; Education; Community-Based Protection; Accountability to Affected Populations)
- 
- * Protection / case management (Registration; Refugee Status Determination; Resettlement; Documentation; Voluntary Repatriation)
- 
- * Assistance & Inclusion (Basic Needs; Health;  Shelter; Water, Sanitation & Hygiene; Energy; Security; Livelihoods & Economic Inclusion; Social Protection)
- 
-A visual inspection of the charts provides technical experts a quick check the remaining dimensions ( __Cons1, Cons2, Cons3, Cons4, Acc4, Acc7__).
-
-Experts are then providing in a dedicated text box for each indicator with  This document can be edited online and through the browser in order to have different people working on it at the same time.
 
 ```{r echo=FALSE, fig.height=7, fig.width=6.5, message=FALSE, warning=FALSE}
 # data |>
@@ -140,7 +122,17 @@ ggplot(  data = dataplot1 ) +
 
 \newpage
 
-# Protection / Legal
+# Protection: Legal
+
+##  Law & Policy
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA3-3.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+
+\newpage
 
 ##  Access to Territory, Non-refoulement
 
@@ -169,6 +161,133 @@ ProgQA::rbm_bullet(data, thisind)[["plot"]]
 
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
 thisind <- "OA6-6.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+
+
+\newpage
+
+
+##  Documentation
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA4-4.3b"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA1-1.3"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+
+\newpage
+##  Registration
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA1-1.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+##  Refugee Status Determination
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA1-1.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA2-2.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA2-2.2"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA2-2.3"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+\newpage
+
+
+
+\newpage
+
+##  Third Country Solutions
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA4-4.2a"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA15-15.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA15-15.2"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA15-15.3"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA4-4.2b"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA4-4.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA14-14.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA14-14.2"
 ProgQA::rbm_bullet(data, thisind)[["plot"]]
 ```
 
@@ -204,38 +323,19 @@ ProgQA::rbm_bullet(data, thisind)[["plot"]]
 \newpage
 
 
-##  Law & Policy
+# Protection: Thematic 
+
+
+##  Security
 
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA3-3.1"
+thisind <- "IA3-3.3"
 ProgQA::rbm_bullet(data, thisind)[["plot"]]
 ```
-
 
 \newpage
 
 
-##  Documentation
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA4-4.3b"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA1-1.3"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-
-\newpage
-
-
-# Protection / Thematic 
 
 ##  Gender-Based Violence
 
@@ -321,7 +421,7 @@ ProgQA::rbm_bullet(data, thisind)[["plot"]]
 
 \newpage
 
-##  Community-Based Protection & Accountability to Affected Populations
+##   Accountability to Affected Populations
 
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
 thisind <- "OA7-7.1"
@@ -337,6 +437,8 @@ ProgQA::rbm_bullet(data, thisind)[["plot"]]
 
 \newpage
 
+## Gender Equality
+
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
 thisind <- "OA7-7.3"
 ProgQA::rbm_bullet(data, thisind)[["plot"]]
@@ -344,129 +446,8 @@ ProgQA::rbm_bullet(data, thisind)[["plot"]]
 
 \newpage
 
-##  Security
 
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA3-3.3"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-
-
-# Protection / Case Management 
-
-##  Registration
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA1-1.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-##  Refugee Status Determination
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA1-1.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA2-2.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA2-2.2"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA2-2.3"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-##  Resettlement
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA4-4.2a"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA15-15.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA15-15.2"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA15-15.3"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-##  Complementary Pathways
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA4-4.2b"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA15-15.3"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-##  Voluntary Repatriation
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA4-4.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA14-14.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA14-14.2"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
+ 
 \newpage
  
 # Assistance & Inclusion
@@ -505,7 +486,7 @@ ProgQA::rbm_bullet(data, thisind)[["plot"]]
 
 \newpage
 
-##  Shelter
+##  Shelter and Housing
 
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
 thisind <- "IA2-2.2"
@@ -556,6 +537,15 @@ ProgQA::rbm_bullet(data, thisind)[["plot"]]
 
 \newpage
 
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA8-8.2"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+\newpage
+
+
+
 ##  Livelihoods & Economic Inclusion
 
 
@@ -594,21 +584,6 @@ thisind <- "OA13-13.3"
 ProgQA::rbm_bullet(data, thisind)[["plot"]]
 ```
 
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA16-16.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA16-16.2"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
 
 \newpage
 

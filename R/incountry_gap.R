@@ -5,6 +5,9 @@
 #'   all outcome indicators within the same country
 #'
 #' @param data RBM QA dataset - expect a few pre-defined variables to works well..
+#' 
+#' @param budget table  from results.unhcr.org 4.6.1_Budget_Download.xlsx 
+#' 
 #' @param thisoperation_mco which operation plan to chart
 #'
 #' @importFrom unhcrthemes theme_unhcr
@@ -15,8 +18,15 @@
 #'
 #' @examples
 #' data <- prepare_qa_data(activityInfoTable= "cdn6y40lm87wi522")
-#' incountry_gap(data, thisoperation_mco = "Brazil ABC" )
-incountry_gap <- function(data, thisoperation_mco){
+#' budget <- readxl::read_excel( system.file("4.6.1_Budget_Download.xlsx", package = "ProgQA"),  skip = 1)|>  
+#' #budget <- readxl::read_excel( here::here("data-raw", "4.6.1_Budget_Download.xlsx"),  skip = 1)|>
+#'   janitor::clean_names() 
+#' incountry_gap(data,budget, thisoperation_mco = "Brazil ABC" )
+#'
+#' incountry_gap(data,budget, thisoperation_mco = "Colombia ABC" )
+#'
+#' incountry_gap(data,budget, thisoperation_mco = "Mexico ABC" )
+incountry_gap <- function(data, budget, thisoperation_mco){
     library(tidyverse)
   
   # thiscountry <-  "ECU"
@@ -26,40 +36,33 @@ incountry_gap <- function(data, thisoperation_mco){
       dplyr::mutate(country = stringr::str_replace(country,
                                                    " \\(Bolivarian Republic of\\)", "")) |>
       dplyr::distinct() |>
-      dplyr::mutate(means_verification_data_source = stringr::str_replace_all(means_verification_data_source,
-                                                                      "https://", " " ) ) |>
       dplyr::rename(target = target_2023, 
-                    baseline = baseline_2023_percent, 
+                    baseline = baseline_2023, 
                     actual = actual_2023) |>
-      
       dplyr::mutate(  actual = as.numeric(actual),
                       target = as.numeric(target),
-                      gap_actual_target = - round( (  target - actual) /  target *100  ,2 ),
+                      ## Calculating gap to standard
+                      gap_green =  round( (  actual - threshold_green ) / 
+                                           dplyr::if_else(threshold_green == 0, 1, threshold_green) * 
+                                           dplyr::if_else(threshold_green == 0, 1, 100)  ,2 ),
+                      gap_green = dplyr::if_else(Reverse == TRUE, 
+                                                         gap_green * -1, 
+                                                         gap_green),  
                       gap_color = dplyr::case_when(
-                        gap_actual_target >= 0     ~ "green",
-                        gap_actual_target < 0  & gap_actual_target >= -10    ~ "orange",
-                        gap_actual_target < -10     ~ "red",  
-                                                   TRUE ~ ""),
-                      gap_actual_green = - round( ( threshold_green - actual) /  threshold_green *100 ,2 ) )     |>  
-      dplyr::mutate(means_verification_data_source = substr(means_verification_data_source, 0 , 50)) |>
-      tidyr::unite(col =  "data_info", 
-                   all_of( c("means_verification_data_source", "means_verification_additional_data_sources") ), 
-                   na.rm = TRUE, 
-                   sep = "<br> ",
-                   remove = FALSE) |>
-      ## Trying to sanitize to get rid of..
-      ## Error: gridtext has encountered a tag that isn't supported yet: <a>
-      # Only a very limited number of tags are currently supported.
-      
-      dplyr::mutate(data_info = stringr::str_replace_all(data_info, "https://", " " ) ) |>
-      dplyr::mutate(data_info = stringr::str_replace_all(data_info, "www.", " " ) ) |>
-      
-      dplyr::mutate( group = as.character(glue::glue("{country}/{means_verification_population_type}") ) ) |>
-      dplyr::mutate( operation = as.character(glue::glue("{means_verification_outcome_area} - {means_verification_indicator} / {means_verification_population_type}") ) ) |>
-      #dplyr::arrange(desc(actual))
-      dplyr::group_by(means_verification_indicator) |>
-      dplyr::arrange(desc( actual), .by_group=TRUE ) |> 
-      dplyr::ungroup(means_verification_indicator) 
+                        gap_green >= 0     ~ "green",
+                        gap_green < 0  & gap_green >= -15    ~ "orange",
+                        gap_green < -15     ~ "red",  
+                                                   TRUE ~ "") ,
+                      ## Calculating deviation to target        
+                      deviation_actual_target =  round( ( actual - target ) / 
+                                                           dplyr::if_else(target == 0, 1, target) * 
+                                                           dplyr::if_else(target == 0, 1, 100) ,2 ),
+               
+                      ## Account for indicator direction
+                      deviation_actual_target = dplyr::if_else(Reverse == TRUE, 
+                                                         deviation_actual_target * -1, 
+                                                         deviation_actual_target) )     |>  
+      dplyr::mutate( indd = as.character(glue::glue("{means_verification_indicator} / {means_verification_population_type}") ) ) 
 
 ## We keep only when there's value for plotting!
 thisdataOutcome <- thisdata1   |>
@@ -69,21 +72,36 @@ thisdataOutcome <- thisdata1   |>
                 means_verification_indicator, 
                 means_verification_outcome_area,  
                 means_verification_population_type, 
+                indd,
                 actual, 
                 target, 
-                gap_actual_target,
+                gap_green,
                 gap_color,
                 threshold_green, 
-                gap_actual_green,
+                deviation_actual_target,
                 baseline, 
                 standard_direction,
                 Reverse, 
-                QA_logical, 
-                operation_mco,   country,  
-                group, operation) |>
-  dplyr::filter (! is.na(gap_actual_target)) |>
-  dplyr::filter (! is.nan(gap_actual_target)) |>
+                operation_mco,   country) |>
+  dplyr::filter (! is.na(gap_green)) |>
+  dplyr::filter (! is.nan(gap_green)) |>
   dplyr::filter (means_verification_results_level == "Outcome")    
+
+
+## merge data on indicators and the one on budget
+budget_outcome <- budget |> 
+  dplyr::filter(operation == thisoperation_mco) |>
+  dplyr::filter(scenario == "Detailed WOL") |>
+  dplyr::group_by(operation_code, operation,  outcome_area) |>
+  dplyr::summarise(cost_usd = sum(cost_usd, na.am = TRUE)) |>
+  dplyr::group_by(operation_code, operation) |>
+  dplyr::mutate( sector_pct = round( cost_usd / sum(cost_usd, na.am = TRUE) * 100, 2) )
+
+thisdataOutcome2 <- thisdataOutcome |>
+  dplyr::left_join(budget_outcome, by = c("means_verification_outcome_area"="outcome_area")) |>
+  dplyr::mutate(sector_pct = dplyr::if_else(is.na(sector_pct), 0, sector_pct),
+                explain = glue::glue("<span style='font-size:12pt'><b>Actual value: {round(actual,2)} </b></span><span style='font-size:8pt'><br> <i> {sector_pct} % of Resource Spent on {means_verification_outcome_area}</i></span>"),
+                pos = gap_green >= 0) 
 
  country <- thisdataOutcome |>
   dplyr::distinct(country) |>
@@ -97,54 +115,54 @@ thisdataOutcome <- thisdata1   |>
   } else if(nrow(thisdataOutcome)> 0) {
   
   ## and now the plot
-  p <-  ggplot2::ggplot(  data = thisdataOutcome) +
-        ggplot2::coord_flip()  +
-    # geom_errorbar(  aes(x = reorder(operation, - gap_actual_target), 
-    #                       ymin = gap_actual_green, 
-    #                       ymax = gap_actual_green),
-    #                   color = "black", 
-    #                   #width = 0.45, 
-    #                   linewidth = 1)   +
-    ggplot2::geom_col(   ggplot2::aes(x = reorder(operation, - gap_actual_target), 
-                    y = gap_actual_green  ),
-                fill = "grey50",    
-                alpha = 0.3,    
-                width = 0.9,
-                color = NA ) + 
-    ggplot2::geom_col(   ggplot2::aes(x = reorder(operation, - gap_actual_target), 
-                    y = gap_actual_target,
-                    fill = gap_color ),
-                #fill = "#0072BC",    
-                width = 0.7,
-                color = NA ) + 
-    ggplot2::scale_fill_manual(values = c( "red" = "#D3212C",    "orange" = "#FF980E",  "green" = "#069C56")) +
-    ggplot2::geom_text( ggplot2::aes(x = reorder(operation, - gap_actual_target), 
-                   y = gap_actual_target,
-                   label = paste(round(gap_actual_target, 1), " %") ),
-               #hjust = 1.5, 
-               size = 2.5,
-               color = "black")  +
-    # scale_y_continuous( label = scales::label_percent(accuracy = 0,
-    #                                    suffix = "%") ) +
-    ggplot2::scale_y_continuous( label =  scales::label_number(accuracy = 1, 
-                                                      scale_cut = scales::cut_short_scale(),
-                                                      suffix = "%") )+
-    ggplot2::scale_x_discrete(labels = function(x) stringr::str_wrap(x, width = 70)) +
+  p <-   ggplot2::ggplot(  data = thisdataOutcome2) +
+  ggplot2::coord_flip()  +
+  ggplot2::geom_col(   ggplot2::aes(x = reorder(indd, - gap_green), 
+                                  y = gap_green,
+                                  fill = pos), 
+                    # fill = "#FFBD31", 
+                     alpha = .5,
+                     width = 0.7,
+                     color = NA ) + 
+    ggplot2::scale_fill_manual(values = c( "TRUE" = "#0072BC",    "FALSE" = "#FFBD31" )) +
+    ## Position label differently in the bar in white - outside bar in black
+    ggtext::geom_richtext( ggplot2::aes(x = reorder(indd, - gap_green), 
+                                        y = gap_green,
+                                        label = explain ),
+                           fill = NA, label.color = NA, # remove background and outline
+                           label.padding = grid::unit(rep(0, 4), "pt") , # remove padding
+      data = subset( thisdataOutcome2, gap_green < abs(max(gap_green) / 2.5) ),
+      hjust = -0.1 ,  vjust = 0.5, colour = "black", size = 3    ) +
+    ## Position label differently in the bar in white - outside bar in black
+    ggtext::geom_richtext( ggplot2::aes(x = reorder(indd, - gap_green), 
+                                        y = gap_green,
+                                        label = explain ),
+                           fill = NA, label.color = NA, # remove background and outline
+                           label.padding = grid::unit(rep(0, 4), "pt") , # remove padding
+      data = subset(thisdataOutcome2, gap_green >= abs(max(gap_green) / 2.5) ),
+      hjust = 1.1 , vjust = 0.5, colour = "black",  size = 3)  +
+     
+  ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, .2)),
+                              label =  scales::label_number(accuracy = 1, 
+                                                             scale_cut = scales::cut_short_scale(),
+                                                             suffix = "%") )+
+  ggplot2::scale_x_discrete(labels = function(x) stringr::str_wrap(x, width = 70)) +
   
-    unhcrthemes::theme_unhcr(font_size = 11, 
-                             #rel_small = 6/9,
-                             grid = "X", 
-                             axis = "y") +
-    ggplot2::theme(  #axis.text.y = ggtext::element_markdown(),
-            legend.position = "none")+
-    ggplot2::labs( x = "", y = "" ,
-          title = stringr::str_wrap( 
-            paste0("Outcome RBM Indicators  | 2023 ",country  ) ,  100),
-          subtitle = stringr::str_wrap( paste0( 
-            "Comparing Gap between Actual value and Target (colored) / Acceptable Threshold (grey)" ) ,
-            110),
-          caption = stringr::str_wrap( "Source: UNHCR RBM / Compass.  Calculation is performed to measure and compare gap between actual value and target value [(target-actual)/target], as well as value and acceptable threshold  - when relevant - [(threshold_green-actual)/threshold_green]" ,
-          110) )  
+  unhcrthemes::theme_unhcr(font_size = 11, 
+                           #rel_small = 6/9,
+                           grid = "X", 
+                           axis = "y") +
+  ggplot2::theme(  #axis.text.y = ggtext::element_markdown(),
+    legend.position = "none")+
+  ggplot2::labs( x = "", 
+                 y = "Relative distance in % between actual value and specific acceptable threshold for each indicator - the broader is the gap, the more negative the distance..." ,
+                 title = stringr::str_wrap( 
+                   paste0("Results Vs Resources Allocation | 2023 ",country  ) ,  100),
+                 subtitle = stringr::str_wrap( paste0( 
+                   "Comparing Gap between Actual value and Standard Acceptable Threshold" ) ,
+                   110),
+                 caption = stringr::str_wrap( "Source: UNHCR RBM / Compass (provisional)" ,
+                                              110) ) 
    }
   out <- list(  plot = p)
   return(out)

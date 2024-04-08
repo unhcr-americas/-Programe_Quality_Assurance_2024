@@ -100,7 +100,14 @@ rbm_bullet(data, thisind)[["plot"]]
 
 ```{r example-incountry_gap, message = FALSE, warning = FALSE, fig.retina = 2, fig.width = 8, fig.asp = 0.618, fig.align = "center", out.width = "90%"}
 data <- prepare_qa_data(activityInfoTable= "cdn6y40lm87wi522")
-incountry_gap(data, thisoperation_mco = "Brazil ABC" )
+budget <- readxl::read_excel( system.file("4.6.1_Budget_Download.xlsx", package = "ProgQA"),  skip = 1)|>  
+#budget <- readxl::read_excel( here::here("data-raw", "4.6.1_Budget_Download.xlsx"),  skip = 1)|>
+  janitor::clean_names() 
+incountry_gap(data,budget, thisoperation_mco = "Brazil ABC" )
+
+incountry_gap(data,budget, thisoperation_mco = "Colombia ABC" )
+
+incountry_gap(data,budget, thisoperation_mco = "Mexico ABC" )
 ```
 
   
@@ -183,6 +190,22 @@ thisind = "13.3 Proportion of PoC (working age) who are unemployed.",  thisoutco
 
 ```{r example-report_result_resource}
 # ProgQA::report_result_resource(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
+```
+
+  
+
+  
+  
+
+# report_country
+
+    
+
+  
+
+```{r example-report_country}
+
+# ProgQA::report_country(year = 2023, activityInfoTable= "cdn6y40lm87wi522",   folder = "dev/report")
 ```
 
   

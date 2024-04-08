@@ -7,7 +7,7 @@ title: "Result Based Management - Indicator Quality Assurance"
 subtitle: "Regional Bureau `r params$region` | `r params$year`"
 date: "`r format(Sys.Date(),  '%d %B %Y')`"
 output:
-  unhcrdown::docx_simple
+  unhcrdown::pptx_slides
 ---
 
 ```{r setup, include=FALSE}
@@ -198,7 +198,31 @@ ggplot(  data = dataplot1 ) +
 
 \newpage
 
-# Protection / Legal
+ 
+
+# Protection: Legal
+
+
+##  Law & Policy
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA3-3.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+
+::: {custom-style="Quote"}
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=77)
+
+
+
+:::
+\newpage
 
 ##  Access to Territory, Non-refoulement
 
@@ -272,28 +296,6 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 \newpage
 
 
-##  Statelessness
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA4-4.3a"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-
-::: {custom-style="Quote"}
-
-
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=57)
-
-
-
-:::
-\newpage
 
 
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
@@ -339,26 +341,6 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 \newpage
 
 
-##  Law & Policy
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA3-3.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-
-::: {custom-style="Quote"}
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=77)
-
-
-
-:::
-\newpage
 
 
 ##  Documentation
@@ -403,7 +385,309 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 \newpage
 
 
-# Protection / Thematic 
+##  Registration
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA1-1.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=61)
+
+
+
+:::
+\newpage
+
+##  Refugee Status Determination
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA1-1.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=5)
+
+
+
+:::
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA2-2.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+ 
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=71)
+ 
+
+:::
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA2-2.2"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+ 
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=71)
+ 
+
+:::
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA2-2.3"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+ 
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=74)
+ 
+
+:::
+\newpage
+
+
+##  Third Country Solutions
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA4-4.2a"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+ 
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=52)
+ 
+
+:::
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA15-15.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+
+::: {custom-style="Quote"}
+ 
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=145)
+
+
+
+:::
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA15-15.2"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=147)
+
+
+
+:::
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA15-15.3"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=150)
+
+
+
+:::
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA4-4.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+
+::: {custom-style="Quote"}
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=49)
+
+
+
+:::
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA4-4.2b"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=54)
+
+
+
+:::
+\newpage
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA14-14.1"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=141)
+
+
+
+:::
+\newpage
+
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA14-14.2"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=143)
+
+
+
+:::
+
+\newpage
+
+
+##  Statelessness
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA4-4.3a"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+
+::: {custom-style="Quote"}
+
+
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=57)
+
+
+
+:::
+\newpage
+
+
+# Protection: Thematic 
+
+##  Security
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "IA3-3.3"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=47)
+
+
+
+:::
+\newpage
+
 
 ##  Gender-Based Violence
 
@@ -595,7 +879,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 :::
 \newpage
 
-##  Community-Based Protection & Accountability to Affected Populations
+##  Accountability to Affected Populations
 
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
 thisind <- "OA7-7.1"
@@ -633,6 +917,8 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 :::
 \newpage
 
+## Gender Equality
+
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
 thisind <- "OA7-7.3"
 ProgQA::rbm_bullet(data, thisind)[["plot"]]
@@ -651,307 +937,10 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 :::
 \newpage
 
-##  Security
 
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA3-3.3"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=47)
-
-
-
-:::
-\newpage
-
-
-
-# Protection / Case Management 
-
-##  Registration
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA1-1.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=61)
-
-
-
-:::
-\newpage
-
-##  Refugee Status Determination
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA1-1.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=5)
-
-
-
-:::
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA2-2.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
  
 
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=71)
- 
 
-:::
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA2-2.2"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
- 
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=71)
- 
-
-:::
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA2-2.3"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
- 
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=74)
- 
-
-:::
-\newpage
-
-##  Resettlement
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA4-4.2a"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
- 
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=52)
- 
-
-:::
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA15-15.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-
-::: {custom-style="Quote"}
- 
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=145)
-
-
-
-:::
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA15-15.2"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=147)
-
-
-
-:::
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA15-15.3"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=150)
-
-
-
-:::
-\newpage
-
-##  Complementary Pathways
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA4-4.2b"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=54)
-
-
-
-:::
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA15-15.3"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=150)
-
-
-
-:::
-\newpage
-
-##  Voluntary Repatriation
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "IA4-4.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-
-::: {custom-style="Quote"}
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=49)
-
-
-
-:::
-\newpage
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA14-14.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=141)
-
-
-
-:::
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA14-14.2"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=143)
-
-
-
-:::
-
-\newpage
  
 # Assistance & Inclusion
 
@@ -1036,7 +1025,7 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 \newpage
 
-##  Shelter
+##  Shelter and Housing
 
 ```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
 thisind <- "IA2-2.2"
@@ -1151,11 +1140,26 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 ::: {custom-style="Quote"}
 
 [Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=118)
-
-
-
 :::
-\newpage
+\newpage 
+
+```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
+thisind <- "OA8-8.2"
+ProgQA::rbm_bullet(data, thisind)[["plot"]]
+```
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+ProgQA::rbm_bullet(data, thisind)[["data"]]
+```
+
+::: {custom-style="Quote"}
+
+[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=118)
+:::
+\newpage 
+\newpage 
+
+
 
 ##  Livelihoods & Economic Inclusion
 
@@ -1253,44 +1257,8 @@ ProgQA::rbm_bullet(data, thisind)[["data"]]
 
 
 :::
-\newpage
 
 
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA16-16.1"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=153)
-
-
-
-:::
-\newpage
-
-
-```{r echo=FALSE, fig.height=8, fig.width=6.5, message=FALSE, warning=FALSE}
-thisind <- "OA16-16.2"
-ProgQA::rbm_bullet(data, thisind)[["plot"]]
-```
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE}
-ProgQA::rbm_bullet(data, thisind)[["data"]]
-```
-
-::: {custom-style="Quote"}
-
-[Link to indicator new metadata](https://intranet.unhcr.org/en/protection-programme/programme-hub/programme-cycle/managing-indicators.html) / [Link to indicator previous metadata](https://intranet.unhcr.org/content/dam/unhcr/intranet/protection-operations/compass/en/guidance/3/coreindicatorsmetadata/2.0%20Core%20Indicator%20Metadata%2004%2010%202021.pdf#page=156)
-
-
-
-:::
 \newpage
 
 
